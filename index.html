@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Germes</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../dist/css/output.css">
+</head>
+<body>
+
+
+    <nav class="bg-white border-gray-200 border-b-2 ">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+            <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="../assets/svg/logo.svg" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <div class="flex items-center md:order-2 space-x-1 md:space-x-2 rtl:space-x-reverse">
+                <a href="#" class=" dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800"><img src="../assets/svg/star.svg" alt=""></a>
+                <a href="#" class="text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 md:px-5 md:py-2.5  focus:outline-none dark:focus:ring-black"><img src="../assets/svg/cart.svg" alt=""></a>
+                <div class="flex flex-col text-center ml-[30px] hidden xl:block ">
+                    <a href="tel:8 (843) 203-93-43" class="font-bold ">8 (843) 203-93-43</a>
+                    <p>заказать обратный звонок</p>
+                </div>
+                <button data-collapse-toggle="mega-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mega-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
+                <ul class="flex flex-col mt-4 gap-[70px] font-medium md:flex-row md:mt-0 md:space-x-8 rtl:space-x-reverse">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-blue-500 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Услуги</a>
+                    </li>
+                    <li>
+                        <button id="mega-menu-dropdown-button" data-dropdown-toggle="mega-menu-dropdown" class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">
+                            Доставка 
+                        </button>
+                        <div id="mega-menu-dropdown" class="absolute z-10 grid hidden w-auto grid-cols-2 text-sm bg-white border border-gray-100 rounded-lg shadow-md dark:border-gray-700 md:grid-cols-3 dark:bg-gray-700">
+                            <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                <ul class="space-y-4" aria-labelledby="mega-menu-dropdown-button">
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Library
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Resources
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Pro Version
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4 pb-0 text-gray-900 md:pb-4 dark:text-white">
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Playground
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            License
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-4">
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Contact Us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Support Center
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-500">
+                                            Terms
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Оплата</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Проекты</a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+    </nav>
+    
+    <header class="header">
+        <div class="containerr">
+            <div class="header__in grid grid-cols-1 md:grid-cols-[22%_minmax(78%,_1fr)]">
+                <div>
+                     <aside id="sidebar-multi-level-sidebar" class=" top-0 left-0 z-40 w-full  transition-transform -translate-x-[full] sm:translate-x-0" aria-label="Sidebar">
+                        <div class="h-full px-3 py-4 overflow-y-auto">
+                           <ul class="space-y-2 font-medium">
+                              <li class="bg-[#5661CB] rounded-md">
+                                 <a href="#" class="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <img src="../assets/svg/dashboard.svg" alt="">
+                                    <span class="ms-3 ">Каталог</span>
+                                 </a>
+                              </li >
+                              <li    class="hidden md:block">
+                                 <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                       <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                       <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                          <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                       </svg>
+                                 </button>
+                                 <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                       <li>
+                                          <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                       </li>
+                                       <li>
+                                          <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                       </li>
+                                 </ul>
+                              </li>
+                              <li   class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li   class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li   class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li   class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li  class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li  class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li  class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                             <li  class="hidden md:block">
+                                <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-[#5661CB]" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                                      <span class="flex-1 ms-3 text-left text-black rtl:text-right whitespace-nowrap">Стеновые материалы</span>
+                                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                         <path stroke="black"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                      </svg>
+                                </button>
+                                <ul id="dropdown-example"  class="hidden text-black py-2 space-y-2">
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Products</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Billing</a>
+                                      </li>
+                                      <li>
+                                         <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-black dark:hover:bg-[#5661CB]">Invoice</a>
+                                      </li>
+                                </ul>
+                             </li>
+                           </ul>
+                        </div>
+                     </aside>
+                     
+
+                </div>
+                <div class=" hidden md:block px-[45px] py-[20px]">
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 items-center gap-[20px] lg:flex-wrap lg:justify-betnween">
+                        <div>
+                            <h3 class="text-[#D41A36] text-[18px]">Акции</h3>
+                        </div>
+                        <div>
+                            <div class="border-2 flex gap-[10px]  px-[15px] py-[13px] border-black rounded-md">
+                                <input class="border-none outline-none w-full" type="text" placeholder="Введите название товара...">
+                                <img src="../assets/svg/serach.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-[18px] uppercase">о компании</h3>
+                        </div>
+                        <div>
+                            <h3 class="text-[18px] uppercase">Кoнтакты</h3>
+                        </div>
+                        <button class="text-white bg-[#5661CB] px-[10px] md:px-[30px] py-[10px] hover:border-2 hover:border-[#5661CB] hover:text-[#5661CB] hover:bg-white rounded-xl">Оптовый заказ</button>
+                    </div>
+
+                    <div class=" hero grid grid-cols-[50%_minmax(50%,_1fr)]  mt-[20px] rounded-xl">
+                        <div class="hidden md:block">
+                        </div>
+                        <div class="bg-[#5D68CF] px-[56px] rounded-r-xl  py-[31px]">
+                            <div class="flex flex-col gap-[15px] text-white">
+                                <h3 class="text-[18px] font-bold md:text-[24px]" >
+                                    Кирпич облицовочный M95
+                                    Воткинский
+                                </h3>
+                                <p>
+                                    Кол-во на поддоне, шт. - 297
+                                </p>
+                                <p>
+                                    Формат одинарный
+                                </p>
+                                <div class="flex gap-[30px] items-center">
+                                    <a href="#">бесплатная доставка</a>
+                                    <a href="#">в наличии</a>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-[24px]">4 500 <span class="text-[16px] font-normal"> P / шт</span></p>
+                                </div>
+                                <div class="flex gap-3">
+                                    <div>
+                                        <button class="bg-white rounded-lg text-black px-[19px] py-[9px]">Купить в 1 клик</button>
+                                    </div>
+                                    <div>
+                                        <button class="border-2 border-white rounded-lg text-black px-[19px] py-[9px]"><img src="../assets/svg/cart-white.svg" alt=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-[25px] grid grid-cols-2 md:grid-cols-4 gap-[10px] items-center justify-between">
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <div class=" mb-hero rounded-xl w-full flex flex-col items-center py-[28px] px-[30px] gap-[20px]  ">
+                        <h3 class="text-[18px] sm:text-[22px] font-bold text-white"> 
+                            Лако-красочные материалы
+                        </h3>
+                        <div class="flex justify-center text-white ">
+                            <p class="text-[16px] font-bold text-center max-w-[250px]">
+                                Скидки 30% на немецкую продукцию 
+                                Alpina на нашем сайте
+                            </p>
+                        </div>
+                        <div>
+                            <button class="py-[6px] px-[11px] border-2 rounded-lg border-white text-white">
+                                Перейти в каталог
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mt-[25px] flex gap-[10px] items-center justify-between">
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-[8px] items-center">
+                            <div>
+                                <img src="../assets/svg/car.svg" alt="">
+                            </div>
+                            <div>
+                                <p class=" text-[14px] max-w-[210px]">
+                                    Доставка стройматериалов 
+                                    и аренда спецтехники
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="cards mt-[30px] py-[20px]">
+
+            <div class="containerr">
+                <div class="flex justify-center md:justify-between items-center">
+                    <h3 class="text-[18px] font-bold md:text-[36px]">
+                        Спецпредложения
+                    </h3>
+                    <a href="#" class="hidden md:flex underline text-[#D41A36]  items-center gap-2">Перейти в раздел скидок <img src="../assets/svg/array-right.svg" alt=""></a>
+                </div>
+
+                <div class="cardss grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-[30px] gap-[28px]">
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardd border-2 py-[15px] rounded-md">
+                        <div class="flex justify-between">
+                            <img src="../assets/img/comp1.png" alt="">
+                            <img src="../assets/svg/star-card.svg" alt="">
+                        </div>
+                        <div class="flex justify-center">
+                            <img src="../assets/img/card.png" alt="">
+                        </div>
+                        <div class="px-[10px]">
+                            <h3 class="font-bold text-[18px] max-w-[200px]">
+                                Кирпич облицовочный M95
+                                Воткинский
+                            </h3>
+                            <p>
+                                Кол-во на поддоне, шт. - 297
+                            </p>
+                            <p>
+                                Формат одинарный
+                            </p>
+                            <div class="flex justify-between">
+                                <a href="#" class="underline text-[14px]">бесплатная доставка</a>
+                                <a href="#" class="underline text-[14px] text-[#219653]">в наличии</a>
+                            </div>
+                            <p class="text-[18px] font-bold">
+                                4 500 
+                                <span class="text-[14px] font-normal">/ шт</span>
+                            </p>
+                            <div class="flex justify-center gap-[5px]">
+                                <button class="py-[9px] px-[27px] bg-[#5661CB] text-white rounded-md">Купить в 1 клик</button>
+                                <button class="py-[12px] px-[10px] border-2 border-[#5661CB] bg-white text-[#5661CB] rounded-md"><img src="../assets/svg/access.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="projects py-[20px]">
+            <div class="containerr">
+                <div class="flex justify-center md:justify-between items-center">
+                    <h3 class="text-[18px] font-bold md:text-[36px]">
+                        Проекты из наших стройматериалов
+                    </h3>
+                    <a href="#" class="hidden md:flex underline text-[#5661CB]  items-center gap-2">Перейти в раздел скидок <img src="../assets/svg/array-right.svg" alt=""></a>
+                </div>
+
+                <div class="py-[38px]">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2">
+                        <div class=" relative">
+                            <div class="swiper default-carousel swiper-container">
+                            <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl  flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+                            </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+
+                               </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+                               </div>
+                             </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class=" relative">
+                            <div class="swiper default-carousel swiper-container">
+                            <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl  flex justify-center items-center">
+                                <img src="../assets/img/screen2.png" alt="">
+                            </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen2.png" alt="">
+
+                               </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen2.png" alt="">
+                               </div>
+                             </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class=" relative">
+                            <div class="swiper default-carousel swiper-container">
+                            <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl  flex justify-center items-center">
+                                <img src="../assets/img/screen3.png" alt="">
+                            </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen3.png" alt="">
+
+                               </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen3.png" alt="">
+                               </div>
+                             </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class=" md:hidden relative">
+                            <div class="swiper default-carousel swiper-container">
+                            <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl  flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+                            </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+
+                               </div>
+                             </div>
+                             <div class="swiper-slide">
+                               <div class="bg-indigo-50 rounded-2xl flex justify-center items-center">
+                                <img src="../assets/img/screen1.png" alt="">
+                               </div>
+                             </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="extra hidden sm:block">
+            <div class="containerr">
+
+                <h3 class="font-bold text-[22px] md:text-[36px]">
+                    Дополнительные услуги
+                </h3>
+
+                <div class="cardss grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px] py-[20px] mt-[20px]">
+                    <div class="cardd px-[41px] py-[30px] shadow-xl rounded-xl">
+                        <img src="../assets/svg/cardd2.svg" alt="">
+                        <h3 class="font-bold text-[16px] mt-[20px]">Доставка стройматериалов </h3>
+                        <p class="max-w-[240px] text-[14px] mt-[10px]">Комплекс услуг по доставке товара 
+                            на Ваш строительный объект</p>
+                    </div>
+                    <div class="cardd px-[41px] bg-[#5661CB] py-[30px] shadow-xl rounded-xl">
+                        <img src="../assets/svg/cardd3.svg" alt="">
+                        <h3 class="font-bold text-[16px] text-white mt-[20px]">Доставка стройматериалов </h3>
+                        <p class="max-w-[240px] text-[14px] text-white mt-[10px]">Комплекс услуг по доставке товара 
+                            на Ваш строительный объект</p>
+                    </div>
+                    <div class="cardd px-[41px] py-[30px] shadow-xl rounded-xl">
+                        <img src="../assets/svg/cardd2.svg" alt="">
+                        <h3 class="font-bold text-[16px] mt-[20px]">Доставка стройматериалов </h3>
+                        <p class="max-w-[240px] text-[14px] mt-[10px]">Комплекс услуг по доставке товара 
+                            на Ваш строительный объект</p>
+                    </div>
+                    <div class="cardd px-[41px] py-[30px] shadow-xl rounded-xl">
+                        <img src="../assets/svg/cardd2.svg" alt="">
+                        <h3 class="font-bold text-[16px] mt-[20px]">Доставка стройматериалов </h3>
+                        <p class="max-w-[240px] text-[14px] mt-[10px]">Комплекс услуг по доставке товара 
+                            на Ваш строительный объект</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="showrum py-[30px]">
+            <div class="containerr">
+                <div class="flex justify-center md:justify-between items-center">
+                    <h3 class="text-[18px] font-bold md:text-[36px]">
+                        Наш шоурум
+                    </h3>
+                    <a href="#" class="hidden md:flex underline text-[#5661CB]  items-center gap-2">Перейти в контакты <img src="../assets/svg/array-right.svg" alt=""></a>
+                </div>
+                <div class="grid mt-[20px] grid-cols-2 md:grid-cols-3 gap-[20px]">
+                    <div><img src="../assets/img/wourum1.png" alt=""></div>
+                    <div><img src="../assets/img/wourum2.png" alt=""></div>
+                    <div class="hidden md:block"><img src="../assets/img/wourum3.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script>
+        var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        autoplay: {
+            delay: 1200,
+            disableOnInteraction: false,
+          },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        });
+        </script>
+</body>
+</html>

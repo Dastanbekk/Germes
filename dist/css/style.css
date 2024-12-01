@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.containerr{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/img/header1.png');
+}
+
+.mb-hero{
+    background-image: url('../../assets/img/header2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
